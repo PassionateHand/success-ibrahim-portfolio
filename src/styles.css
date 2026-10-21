@@ -825,7 +825,26 @@ footer a {
 
 .project-section {
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
 }
+
+
+.pinterest-frame {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+#graphic-projects h2 {
+    font-size: clamp(40px, 6vw, 60px);
+    color: var(--lime, #d9ff3f);
+}
+
 
 .project-grid {
     display: grid;

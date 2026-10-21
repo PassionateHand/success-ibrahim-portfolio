@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
@@ -362,32 +363,35 @@ function App() {
 
         {/* GRAPHIC DESIGN PROJECTS */}
         <section className="section project-section" id="graphic-projects">
-          <label>// selected work · graphic design</label>
-          <div className="head">
-            <h2>Ideas made<br /><i>visible.</i></h2>
-            <p>Brand identities, campaign artwork, print layouts and product visuals. Replace these starter cards with your actual designs and project links.</p>
-          </div>
-          <div className="project-grid">
-            {[
-              { title: 'Brand Identity & Logo', type: 'Branding · Identity', image: 'https://images.unsplash.com/photo-1634942536790-253d7f2f1f3b?auto=format&fit=crop&w=1200&q=85', note: 'Logo system, color direction and brand applications' },
-              { title: 'Campaign & Social Artwork', type: 'Campaign · Digital design', image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=85', note: 'A flexible visual system for digital promotion' },
-              { title: 'Print & Product Branding', type: 'Print · Packaging', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=85', note: 'Print-ready artwork with attention to production detail' }
-            ].map((project) => (
-              <article className="project-card" key={project.title}>
-                <a className="project-image" href="#contact" aria-label={`Ask about ${project.title}`}>
-                  <img src={project.image} alt={project.title} loading="lazy" />
-                  <span className="project-arrow"><ArrowUpRight size={20} /></span>
-                </a>
-                <div className="project-copy">
-                  <span className="project-type">{project.type}</span>
-                  <h3>{project.title}</h3>
-                  <p>{project.note}</p>
-                  <a className="project-link" href="#contact">Discuss a similar project <ArrowUpRight size={15} /></a>
-                </div>
-              </article>
-            ))}
-          </div>
+   
+      <div>
+        <h2>My Graphic Design Projects</h2>
+        <p>Explore my creative work on Pinterest.</p>
+      </div>
+      
+      
+      
+      <div className="pinterest-frame">
+        <a
+          data-pin-do="embedUser"
+          data-pin-board-width="fit-contents"
+          data-pin-scale-height="500"
+          data-pin-scale-width="100"
+          href="https://www.pinterest.com/cloudygraphics/created/"
+        >
+          CloudyGraphics on Pinterest
+        </a>
+      </div>
+
+      <script
+        async
+        defer
+        src="https://assets.pinterest.com/js/pinit.js"
+      />
+  
+
         </section>
+
 
         {/* WEBSITE DESIGN PROJECTS */}
         <section className="section project-section" id="web-projects">
@@ -396,26 +400,8 @@ function App() {
             <h2>Digital experiences<br /><i>built to work.</i></h2>
             <p>Responsive websites, landing pages and digital experiences. Replace the example cards with screenshots, live URLs and repositories for your completed projects.</p>
           </div>
-          <div className="project-grid web-project-grid">
-            {[
-              { title: 'Real Estate Website', type: 'Website · Responsive UI', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85', note: 'Property discovery experience with clear calls to action' },
-              { title: 'Business Landing Page', type: 'Landing page · Frontend', image: 'https://images.unsplash.com/photo-1460925895917-afdac827c52f?auto=format&fit=crop&w=1200&q=85', note: 'A polished digital presence for a growing business' },
-              { title: 'Creative Portfolio Website', type: 'Portfolio · UI design', image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=85', note: 'A visual-first portfolio built around projects and storytelling' }
-            ].map((project) => (
-              <article className="project-card" key={project.title}>
-                <a className="project-image" href="#contact" aria-label={`Ask about ${project.title}`}>
-                  <img src={project.image} alt={project.title} loading="lazy" />
-                  <span className="project-arrow"><ArrowUpRight size={20} /></span>
-                </a>
-                <div className="project-copy">
-                  <span className="project-type">{project.type}</span>
-                  <h3>{project.title}</h3>
-                  <p>{project.note}</p>
-                  <a className="project-link" href="#contact">Discuss a website <ArrowUpRight size={15} /></a>
-                </div>
-              </article>
-            ))}
-          </div>
+       
+          
         </section>
 
         {/* EXPERIENCE */}
