@@ -183,6 +183,7 @@ h2 i {
     flex-wrap: wrap
 }
 
+
 .actions a {
     padding: 14px 17px;
     text-decoration: none;
@@ -383,6 +384,7 @@ label {
 .head h2 {
     margin: 0
 }
+
 
 .ticker {
     white-space: nowrap;
@@ -824,27 +826,38 @@ footer a {
 }
 
 .project-section {
-    overflow: hidden;
-    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
     align-items: center;
-    justify-content: center;
-    gap: 200px;
+
 }
+
+
 
 
 .pinterest-frame {
+    max-width: 700px;
+    justify-self: center;
     flex: 1 1 100%;
-    max-width: 100%;
-    margin-right: 20px;
 }
 
+.graphics-head{
+    display: flex;
+    flex-direction: column;
+}
 #graphic-projects h2 {
-    font-size: clamp(40px, 6vw, 60px);
+    font-size: clamp(45px, 6.5vw, 65px);
     color: var(--lime, #d9ff3f);
+    padding: 0;
+    margin: 0;
 }
-
+.graphics-head h2 i {
+    font-style: normal;
+    color: white;
+}
 
 .project-grid {
     display: grid;
@@ -939,6 +952,10 @@ footer a {
 }
 
 @media (max-width: 900px) {
+    .project-section {
+        justify-content: center;
+
+    }
     .project-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }

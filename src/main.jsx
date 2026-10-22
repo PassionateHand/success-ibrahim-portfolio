@@ -364,8 +364,8 @@ function App() {
         {/* GRAPHIC DESIGN PROJECTS */}
         <section className="section project-section" id="graphic-projects">
    
-      <div>
-        <h2>My Graphic Design Projects</h2>
+      <div className="graphics-head">
+        <h2><i>My Graphic Design</i> <br /> Projects</h2>
         <p>Explore my creative work on Pinterest.</p>
       </div>
       
@@ -374,9 +374,9 @@ function App() {
       <div className="pinterest-frame">
         <a
           data-pin-do="embedUser"
-          data-pin-board-width="fit-contents"
+          data-pin-board-width="800"
           data-pin-scale-height="500"
-          data-pin-scale-width="100"
+          data-pin-scale-width="80"
           href="https://www.pinterest.com/cloudygraphics/created/"
         >
           CloudyGraphics on Pinterest
